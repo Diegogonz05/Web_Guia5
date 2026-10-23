@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Índice de la Guía 5 de Desarrollo Web I: fundamentos de JavaScript, funciones, eventos, arreglos y objetos.">
+    <title>Guía 5 - Desarrollo Web I | Diego González</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+
+        .header-info h1 {
+            margin: 0 0 10px 0;
+        }
+
+        .header-info p {
+            margin: 0;
+        }
+
+        #MiFoto {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+        }
+
+        a {
+            color: #F37021;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover, a:focus-visible {
+            text-decoration: underline;
+            color: #D9591A;
+        }
+
+        ul.enlaces {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.enlaces li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            border-left: 4px solid #F37021;
+        }
+
+        .reto-card {
+            border-top: 5px solid #ed2023;
+        }
+
+        .reto-card ul.enlaces li {
+            border-left-color: #ed2023;
+        }
+
+        .reto-card a {
+            color: #d91d20;
+        }
+
+        .reto-card a:hover, .reto-card a:focus-visible {
+            color: #a91518;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 9px;
+            margin: 3px 4px 0 0;
+            background: #ecf0f1;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        footer {
+            text-align: center;
+            color: #666;
+            padding: 10px 0 25px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 650px) {
+            .header-container {
+                align-items: flex-start;
+            }
+
+            #MiFoto {
+                width: 80px;
+                height: 80px;
+            }
+
+            body {
+                padding: 14px;
+            }
+
+            .card {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-info">
+            <h1>Guía de Laboratorio Nº 5</h1>
+            <p><strong>Estudiante:</strong> Diego González | Ingeniería de Software y Negocios Digitales</p>
+            <p><strong>Materia:</strong> Desarrollo Web I</p>
+            <p><strong>Carnet:</strong> 20255569</p>
+        </div>
+        <img src="img/foto-biografia.jpg" alt="Fotografía de Diego González" width="100" height="100" id="MiFoto">
+    </header>
+
+    <main>
+        <section class="card" aria-labelledby="procedimiento">
+            <h2 id="procedimiento">1. Procedimiento — Introducción a JavaScript</h2>
+            <p>Ejemplos de interacción con el usuario, creación de HTML desde JavaScript y operaciones con funciones y eventos.</p>
+            <ul class="enlaces">
+                <li><a href="pages/interaccion.html">Ejemplo 1: Interacción con el usuario — alert, prompt y confirm</a></li>
+                <li><a href="pages/tablas.html">Ejemplo 2: Creación de tablas con JavaScript</a></li>
+                <li><a href="pages/numeroAleatorio.html">Ejemplo 3: Adivinando el número — Rango de 1 a 25</a></li>
+                <li><a href="pages/operacionesBasicas.html">Ejemplo 4: Operaciones básicas — Suma, resta, multiplicación y división</a></li>
+            </ul>
+        </section>
+
+        <section class="card" aria-labelledby="complementario">
+            <h2 id="complementario">2. Ejercicios complementarios</h2>
+            <p>Aplicación de condicionales, validaciones y métodos de arreglos para resolver los ejercicios de la guía.</p>
+            <div>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Funciones</span>
+                <span class="tag">Eventos</span>
+                <span class="tag">Arreglos y objetos</span>
+                <span class="tag">Bootstrap</span>
+            </div>
+            <ul class="enlaces">
+                <li><a href="pages/numeroAleatorio.html">Ejercicio 1: Número aleatorio — Pistas de mayor o menor</a></li>
+                <li><a href="Gestion_pedidos_cafeteria/index.html">Ejercicio 2: Gestión de pedidos de una cafetería</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        Guía 5 — Desarrollo Web I — ESEN — 2026
+    </footer>
+</body>
+</html>
